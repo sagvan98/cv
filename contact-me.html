@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ed Sheeran</title>
+</head>
+
+<body>
+  <h1>My Contact Details</h1>
+  <li><a href="https://www.youtube.com">My YouTube channel</a></li>
+  <li><a href="ed@gmail.com">Email</a></li>
+  <li><a href="tel:+1234567890">Phone</a></li>
+  <p>My fictional address</p>
+
+  <hr>
+  <!-- by default, "action" has a value of "index.html" which takes the user to the home-page after clicking on it, but we can change it to "mailto:joe@example.com" to send the user's input values to a specific email of our choice -->
+  <form action="mailto:info@londonappbrewery.com" method="post" enctype="text/plain">
+    <!--"enctype" which means "encoding-type" removes any unnecessary characters when our data is sent through an email, only plain text will be included (test seding "hey there!" as your message without "enctype")-->
+    <!-- the "name" attribute classifies each data input by the user while sending to the email, in this case, when the data is sent, it will be like this:
+   "yourName=sagvan
+    yourEmail=sagvanbarzani98@gmail.com
+    yourMessage=Hey there!"
+  -->
+    <label for="">Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label for="">Your Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label for="">Your Message:</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea> <!-- "rows" determine how tall your textarea should be and "cols" determines how wide it should be on your webpage-->
+    <input type="submit" name="" value="Submit Button">
+  </form>
+</body>
+
+</html>
